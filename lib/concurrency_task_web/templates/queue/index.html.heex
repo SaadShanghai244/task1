@@ -1,0 +1,26 @@
+<h1>Listing Queue</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for queue <- @queue do %>
+    <tr>
+      <td><%= queue.status %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.queue_path(@conn, :show, queue) %></span>
+        <span><%= link "Edit", to: Routes.queue_path(@conn, :edit, queue) %></span>
+        <span><%= link "Delete", to: Routes.queue_path(@conn, :delete, queue), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Queue", to: Routes.queue_path(@conn, :new) %></span>

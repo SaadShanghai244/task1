@@ -1,16 +1,16 @@
-defmodule ConcurrencyTask.User do
+defmodule ConcurrencyTask.Task1.Queue do
   use Ecto.Schema
   import Ecto.Changeset
 
-  schema "users" do
+  schema "queue" do
     field :status, :string
 
     timestamps()
   end
 
   @doc false
-  def changeset(user, attrs) do
-    user
+  def changeset(queue, attrs) do
+    queue
     |> cast(attrs, [:status])
     |> validate_required([:status])
   end

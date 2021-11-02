@@ -1,0 +1,5 @@
+<h1>Edit Queue</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.queue_path(@conn, :update, @queue)) %>
+
+<span><%= link "Back", to: Routes.queue_path(@conn, :index) %></span>
