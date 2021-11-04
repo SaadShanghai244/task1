@@ -5,7 +5,7 @@ defmodule ConcurrencyTask.Task1.Queue do
   schema "queue" do
     field :status, :string
 
-    timestamps()
+
   end
 
   @doc false

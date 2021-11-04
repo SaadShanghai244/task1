@@ -5,7 +5,7 @@ defmodule ConcurrencyTask.Repo.Migrations.CreateQueue do
     create table(:queue) do
       add :status, :string
 
-      timestamps()
+
     end
   end
 end

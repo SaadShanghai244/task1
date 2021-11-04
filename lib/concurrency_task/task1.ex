@@ -85,9 +85,16 @@ defmodule ConcurrencyTask.Task1 do
       {:error, %Ecto.Changeset{}}
 
   """
+
+
+  def get_all() do
+   Repo.all(Queue)
+  end
+
   def delete_queue(%Queue{} = queue) do
     Repo.delete(queue)
   end
+
 
   @doc """
   Returns an `%Ecto.Changeset{}` for tracking queue changes.
