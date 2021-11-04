@@ -1,0 +1,13 @@
+<h1>Show Queue</h1>
+
+<ul>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @queue.status %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.queue_path(@conn, :edit, @queue) %></span> |
+<span><%= link "Back", to: Routes.queue_path(@conn, :index) %></span>

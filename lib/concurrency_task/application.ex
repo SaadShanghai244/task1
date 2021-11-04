@@ -14,6 +14,7 @@ defmodule ConcurrencyTask.Application do
       ConcurrencyTaskWeb.Telemetry,
       # Start the PubSub system
       {Phoenix.PubSub, name: ConcurrencyTask.PubSub},
+      {Stack, []},
       # Start the Endpoint (http/https)
       ConcurrencyTaskWeb.Endpoint
       # Start a worker by calling: ConcurrencyTask.Worker.start_link(arg)

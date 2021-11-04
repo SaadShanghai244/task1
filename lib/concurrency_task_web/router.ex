@@ -16,8 +16,9 @@ defmodule ConcurrencyTaskWeb.Router do
 
   scope "/", ConcurrencyTaskWeb do
     pipe_through :browser
-
     get "/", PageController, :index
+
+    resources "/queue", QueueController
   end
 
   # Other scopes may use custom stacks.

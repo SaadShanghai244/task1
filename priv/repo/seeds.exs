@@ -9,3 +9,26 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+alias ConcurrencyTask.Task1
+
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "null"})
+Task1.create_queue(%{status: "not empty"})
