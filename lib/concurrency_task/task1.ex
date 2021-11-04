@@ -61,6 +61,8 @@ defmodule ConcurrencyTask.Task1 do
     # SELECT * FROM biggest_companies LIMIT 1;
   end
 
+
+
   def create_queue(attrs \\ %{}) do
     %Queue{}
     |> Queue.changeset(attrs)
