@@ -49,6 +49,18 @@ defmodule ConcurrencyTask.Task1 do
       {:error, %Ecto.Changeset{}}
 
   """
+  def get_one() do
+    # IO.inspect("hashcj")
+    data = Ecto.Query.from(f in Queue,
+    order_by: [asc: f.id],
+    where: f.status == "null",
+    limit: 1)
+    Repo.all(data)
+    # Repo.get(Queue,id)
+    # Repo.all(Queue)
+    # SELECT * FROM biggest_companies LIMIT 1;
+  end
+
   def create_queue(attrs \\ %{}) do
     %Queue{}
     |> Queue.changeset(attrs)
